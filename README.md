@@ -1,8 +1,9 @@
-# NEWS_TRIVIA
+# PITCH GURUS
 -  This project was generated with [python](https://www.python.org/) 
 #### By **Caroline W. Nyambura**
 ## Description
-- An application that will help users list and preview news articles from various sources.   
+An application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
+
 ## Further help
 
 To get more help on python please visit https://www.python.org/.
@@ -31,7 +32,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 
 
-Link to the site : https://newstrivia8.herokuapp.com/
+Link to the site : https://pitchgutu2.herokuapp.com/
 
 ### License
 The MIT licence Copyright (c)2021
