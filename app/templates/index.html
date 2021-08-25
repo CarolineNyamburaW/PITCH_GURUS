@@ -1,13 +1,76 @@
 {%extends 'bootstrap/base.html'%}
+
+
 {%block navbar%}
 {%include 'navbar.html'%}
 {%endblock%}
 
 
 {% block content %}
+<style>
+  body {
+  background: linear-gradient(
+            0deg
+            ,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"); 
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rancho', cursive;    
+    font-size: 4vh;
+    color: #c5c5c5;
+    font-family: 'Hina Mincho', serif;
+    
+}
+.well{
+      text-align: center; 
+      box-shadow: 0 7px 8px 0 rgba(194, 31, 126, 0.8), 0 10px 10px 0 rgba(0,0,0,0.8);
+      background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 30px;
+  }
+.welcomebox{
+      text-align: center; 
+      box-shadow: 0 7px 8px 0 rgba(194, 31, 126, 0.8), 0 10px 10px 0 rgba(0,0,0,0.8);
+      background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 30px;
+  }
+.welcome{
+  border-radius: 2vh;
+    border: 1px solid #eee;
+    padding: 2vh 8vh;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.2s ease-in-out;
+    margin-top: 5vh;
+    background-color: transparent;
+    color: #000;
+    font-weight: 600;
+    font-size: 5vh;
+    border: 2px solid #fff;
+    width: auto;
+    position: relative;
+    display: block;
+    font-family: 'Rancho', cursive;
+    font-size: 4vh;
+    color: #c5c5c5;
+}
+.btn{
+  background-color: rgba(194, 31, 126, 0.8); 
+}
+
+</style>
+
 <div class="">
-  <div class="jumbotron jumbotron-fluid" style="background-image: url('https://unsplash.com/photos/JnB8Gio4GZo');">
-    <div class="container text-white text-center">
+  <div class="jumbotron jumbotron-fluid welcomebox" >
+    <div class="container text-white text-center welcome">
       <h2 class="card-title h1-responsive font-bold">Welcome to Pitch App</h2>
       <p class="lead">We are all a node, a center to a universe. With that connectivity here is Pitch App that let's you pitch in the provided categories and you never know that one minute could be the change in your life.</p>
       <a class="btn btn-success btn-md" href="{{url_for('main.new_pitch')}}"><i class="fas fa-clone left"></i>Create Pitch</a>
@@ -20,7 +83,7 @@
   <div class="row m-3">
     <div class="col-sm">
       <div class=" card col-sm pt-2">
-        <div class="well well-lg p-3" style="text-align: center; box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8); background-color: powderblue;">
+        <div class="well well-lg p-3">
             <h3 class="">Interviews Pitches</h3>
             <hr>
             <p>Looking for a job? Place a pitch here: let your skills sell you> </p>
@@ -31,7 +94,7 @@
     </div>
     <div class="col-sm">
       <div class=" card col-sm mt-2">
-        <div class="well well-lg p-3" style="text-align: center; box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8); background-color: powderblue;">
+        <div class="well well-lg p-3">
             <h3>Promotion Pitches</h3>
             <hr>
             <p>Promotional pitches can provide an effective way to advertise you and what you do.  </p>
@@ -45,7 +108,7 @@
   <div class="row m-3">
     <div class="col-sm">
       <div class=" card col-sm mt-2">
-        <div class="well well-lg p-3" style="text-align: center; box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8); background-color: powderblue;">
+        <div class="well well-lg p-3" >
             <h3>Product Pitches</h3>
             <hr>
             <p> Your products need to really be visible to the world.Let your star shine and shine so </p>
@@ -57,7 +120,7 @@
     </div>
     <div class="col-sm">
       <div class=" card col-sm mt-2">
-        <div class="well well-lg p-3" style="text-align: center; box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8); background-color: powderblue;">
+        <div class="well well-lg p-3">
             <h3>Pickup Lines Pitches</h3>
             <hr>
             <p> Here are the great pickup lines that should be included in your pitch</p>
